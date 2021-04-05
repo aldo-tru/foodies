@@ -1,7 +1,16 @@
 @charset 'UTF-8';
 
 // Abstracts
-@import "abstracts/all";
+@import "./sass/abstracts/all";
 
 // Base
-@import "base/all";
+@import "./sass/base/all";
+
+// Components
+@import "./sass/components/all";
+
+// Layout
+@import "./sass/layout/all";
+
+// Pages
+@import "./sass/pages/all";

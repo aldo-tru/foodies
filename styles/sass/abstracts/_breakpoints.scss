@@ -1,0 +1,72 @@
+/**
+ * Media query for devices from 480 and above
+ */
+ @mixin mobile-up {
+    @media (min-width: 480px) {
+      @content;
+    }
+  }
+  
+  /**
+   * Media query for mobile devices
+   */
+  @mixin mobile {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  
+  /**
+   * Media query for devices from tablet and above
+   */
+  @mixin tablet-up {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  /**
+   * Media query for devices from 992 and above
+   */
+  @mixin medium-up {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  
+  /**
+   * Media query for standard 991 and below
+   */
+  @mixin medium-down {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+  
+  /**
+   * Media query for devices from 1025 and above
+   */
+  @mixin large-up {
+    @media (min-width: 1025px) {
+      @content;
+    }
+  }
+  
+  /**
+   * Media query for standard desktop and below
+   */
+  @mixin desktop-down {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+  
+  /**
+   * Media query for standard desktop and above
+   */
+  @mixin desktop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  
