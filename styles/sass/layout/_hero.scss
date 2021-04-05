@@ -1,0 +1,18 @@
+.hero {
+    background-color: $dark-gray-1;
+    background-image: linear-gradient(
+        to right, 
+        rgba($dark-gray-1, 0.45), 
+        rgba($dark-gray-1, 0)), 
+        url("../../../assets/img/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 89px;
+    min-height: calc(100vh - 89px);
+
+    &__header {
+        @include mainHead;
+        line-height: 1;
+    }
+}

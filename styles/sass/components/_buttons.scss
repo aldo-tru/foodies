@@ -1,0 +1,35 @@
+.btn {
+    @include borderColorBlack;
+    transition: $base-transition;
+    
+    &:focus,
+    &:active {
+        box-shadow: none;
+    }
+
+    &--red {
+        background-color: $red-1;
+        
+        &:hover,
+        &:focus {
+            background-color: $red-1-lighter;
+        }
+        
+        &:active {
+            background-color: $red-1-dark;
+        }
+    }
+
+    &--yellow {
+        background-color: $yellow-1;
+        
+        &:hover,
+        &:focus {
+            background-color: $yellow-1-dark;
+        }
+        
+        &:active {
+            background-color: $yellow-1-darker;
+        }
+    }
+}

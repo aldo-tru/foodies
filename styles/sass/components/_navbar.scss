@@ -1,0 +1,70 @@
+.nav {
+    @include borderColorBlack;
+    background-color: $white-2;
+
+    &__log-box,
+    &__logo {
+        max-width: 3.5rem;
+        width: 100%;
+    }
+
+    &-link {
+        @include textDecorationWavy;
+        text-decoration-color: transparent;
+        
+        &:hover,
+        &:focus {
+            @include textDecorationWavy;
+        }
+    }
+
+    & .dropdown {
+
+        &-item {
+            @include borderColorBlack;
+            text-decoration: none;
+            transition: $base-transition;
+            
+            &:hover,
+            &:focus {
+                background-color: $blue-1;
+                text-decoration: none;
+            }
+            
+            &:active {
+                background-color: $blue-1-darker;
+                color: inherit;
+            }
+        }
+
+        &-menu {
+            @include borderColorBlack;
+            background-color: $pink-1;
+        }
+    }
+
+    & .navbar-toggler {
+        @include borderColorBlack;
+        background-color: $red-1;
+        padding: 0.5rem 0.5rem;
+        transition: $base-transition;
+
+        &:hover,
+        &:focus {
+            @include noOutline;
+            background-color: $red-1-darker;
+        }
+    }
+}
+
+// Mobile menu
+
+.navbar-collapse {
+
+    .nav-item {
+
+        &:not(:last-child) {
+            margin-bottom: 0.75rem;
+        }
+    }
+}

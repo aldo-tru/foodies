@@ -1,0 +1,37 @@
+.composition {
+
+    &__img {
+        @include borderColorBlack;
+    }
+
+    &__info-box {
+        position: absolute;
+            bottom: 0;
+            right: 0;
+        width: auto;
+        transform: translateY(2rem);
+        
+        @include mobile {
+            position: static;
+            transform: unset;
+            width: 100%
+        }
+    }
+
+    &__header {
+
+        @include mobile {
+            font-size: 1.5rem;
+        }
+    }
+    
+    &__info {
+        @include borderColorBlack;
+        background-color: $green-1;
+        max-width: 28.125rem;
+        
+        @include mobile {
+            max-width: 100%;
+        }
+    }
+}

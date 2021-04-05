@@ -1,0 +1,36 @@
+.hero,
+section:not(:last-child) {
+    border-bottom: solid 1px $dark-gray-1;
+}
+
+.about {
+    @include paddingVerticalBig;
+    background-color: $yellow-1;
+}
+
+.recipes {
+    @include paddingVerticalBig;
+    background-color: $red-1;
+    
+    &__header {
+        @include subHead;
+    }
+}
+
+.showcase {
+    @include paddingVerticalBig;
+    background-color: $blue-1;
+
+    &__header {
+        @include subHead;
+        margin-bottom: 6.5rem;
+        
+        @include medium-down {
+            margin-bottom: 4.5rem;
+        }
+        
+        @include mobile {
+            margin-bottom: 3rem;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.footer {
+    @include borderColorBlack;
+    background-color: $pink-1;
+
+    &__logo {
+        max-width: 50px;
+    }
+    
+    &__details {
+        margin-bottom: 0;
+    }
+
+    &__details:not(:last-child),
+    &__item:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+    
+    &__subhead {
+        font-size: 1.5rem;
+    }
+
+    &__item-social {
+        
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__link-social {
+        @include borderColorBlack;
+        background-color: $blue-1;
+        transition: $base-transition;
+
+        &:hover {
+            background-color: $yellow-1;
+        }
+    }
+}

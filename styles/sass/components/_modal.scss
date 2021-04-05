@@ -1,0 +1,37 @@
+.modal {
+
+    &-open & {
+        display: flex !important;
+            align-items: center;
+            justify-content: center;
+    }
+
+    &-dialog {
+        max-width: 27.5rem;
+    }
+
+    &-content {
+        @include borderColorBlack;
+        background-clip: unset;
+    }
+
+    &-img {
+        background-image: linear-gradient(
+            rgba($dark-gray-1, 0.25),
+            rgba($dark-gray-1, 0.25)),
+            url("../../../assets/img/dishes-3.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: $dark-gray-1;
+        min-height: 250px;
+    }
+
+    &-header {
+        border: none;
+    }
+
+    &-input {
+        @include borderColorBlack;
+    }
+}

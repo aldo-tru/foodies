@@ -1,0 +1,65 @@
+.carousel {
+
+    &-inner {
+        @include borderColorBlack;
+    }
+
+    &__icon {
+        display: block;
+        position: absolute;
+            right: 8px;
+            top: -80px;
+        transform: rotate(-25deg);
+        max-width: 110px;
+        z-index: 1;
+        
+        @media only screen and (max-width: 77.5em) {
+            max-width: 75px;
+            transform: rotate(-25deg);
+        }
+        
+        @include mobile {
+            max-width: 56px;
+            right: 1px;
+            top: -42px;
+        }
+    }
+
+    &-control-prev,
+    &-control-next {
+        opacity: 1;
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+        }
+    }
+
+    &-control-prev:hover &-control-prev-icon,
+    &-control-next:hover &-control-next-icon,
+    &-control-prev:focus &-control-prev-icon,
+    &-control-next:focus &-control-next-icon {
+        background-color: $green-1;
+    }
+
+    &-control-prev-icon,
+    &-control-next-icon {
+        @include borderColorBlack;
+        background-color: $red-1-dark;
+        background-size: 100px 15px;
+        padding: 1.5rem;
+        transition: $base-transition;
+    }
+
+    &-indicators li {
+        border: solid 1px black;
+        opacity: 1;
+        padding: 0.1rem 0.5rem;
+        transition: $base-transition;
+
+        &.active {
+            background-color: $yellow-1-darker;
+        }
+    }
+
+}
