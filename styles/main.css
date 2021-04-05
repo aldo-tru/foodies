@@ -26,14 +26,14 @@
   font-family: "Poppins";
   font-weight: 400;
   font-style: normal;
-  src: url("../../assets/fonts/poppins/Poppins-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/poppins/Poppins-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Poppins";
   font-weight: 700;
   font-style: normal;
-  src: url("../../assets/fonts/poppins/Poppins-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/poppins/Poppins-Bold.ttf") format("truetype");
 }
 
 ::-moz-selection {
@@ -256,8 +256,8 @@ a:hover, a:focus {
 }
 
 .modal-img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 2, 2, 0.25)), to(rgba(2, 2, 2, 0.25))), url("../../../assets/img/dishes-3.jpg");
-  background-image: linear-gradient(rgba(2, 2, 2, 0.25), rgba(2, 2, 2, 0.25)), url("../../../assets/img/dishes-3.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 2, 2, 0.25)), to(rgba(2, 2, 2, 0.25))), url("../assets/img/dishes-3.jpg");
+  background-image: linear-gradient(rgba(2, 2, 2, 0.25), rgba(2, 2, 2, 0.25)), url("../assets/img/dishes-3.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -422,8 +422,8 @@ a:hover, a:focus {
 
 .hero {
   background-color: #020202;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(2, 2, 2, 0.45)), to(rgba(2, 2, 2, 0))), url("../../../assets/img/hero.jpg");
-  background-image: linear-gradient(to right, rgba(2, 2, 2, 0.45), rgba(2, 2, 2, 0)), url("../../../assets/img/hero.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(2, 2, 2, 0.45)), to(rgba(2, 2, 2, 0))), url("../assets/img/hero.jpg");
+  background-image: linear-gradient(to right, rgba(2, 2, 2, 0.45), rgba(2, 2, 2, 0)), url("../assets/img/hero.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
